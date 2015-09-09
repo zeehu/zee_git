@@ -1,0 +1,11 @@
+1.怎样用C库函数获取文件长度
+	FILE *fs=fopen（"C:\1.txt","r"）；//创建文件流
+    long length=0;//声明文件长度
+    fseek（fs,0,SEEK_END）；//将文件内部指针放到文件最后面
+    length=ftell（fs）；//读取文件指针的位置，得到文件字符的个数
+    rewind（fs）；//将文件指针重置到文件最前面
+	
+2.main函数相关
+
+
+3.new和malloc的区别
